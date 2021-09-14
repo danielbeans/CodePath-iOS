@@ -202,7 +202,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="202" height="286"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzu-gb-e1i">
+                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzu-gb-e1i">
                                                     <rect key="frame" x="0.0" y="0.0" width="202" height="286"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -211,6 +211,7 @@
                                         <size key="customSize" width="202" height="286"/>
                                         <connections>
                                             <outlet property="posterView" destination="pzu-gb-e1i" id="IIS-Ld-VAB"/>
+                                            <segue destination="Cec-09-Wil" kind="show" id="A4B-Ti-o8G"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -248,6 +249,9 @@
             <point key="canvasLocation" x="1924.6376811594205" y="-141.29464285714286"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="A4B-Ti-o8G"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
