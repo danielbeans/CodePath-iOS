@@ -17,9 +17,15 @@ class MovieDetailsViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     
     var movie: [String:Any]!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var context = CIContext(options: nil)
 
         // Do any additional setup after loading the view.
         titleLabel.text = movie["title"] as? String
@@ -36,8 +42,13 @@ class MovieDetailsViewController: UIViewController {
         
        let backdropPath = movie["backdrop_path"] as! String
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
-       
+        
        backdropView!.af_setImage(withURL: backdropUrl!)
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+        blurredEffectView.frame = backdropView.bounds
+        backdropView.addSubview(blurredEffectView)
     }
     
 
