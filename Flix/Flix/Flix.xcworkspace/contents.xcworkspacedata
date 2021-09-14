@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/danielwilliams/Desktop/Programming/CodePath-iOS/Flix/Flix/Flix/MovieGridViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:../README.md">
    </FileRef>
    <FileRef
